@@ -1,0 +1,253 @@
+@font-face {
+  font-family: myFont;
+  src: url(../font/Omaga-Regular.ttf.otf);
+}
+
+body {
+  margin: 0;
+  font-family: myFont;
+  background-image: url(../image/logo\ aziz\ no\ background\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*==================================== Navbar ==================================== */
+
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0px 10px 0px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0px 7px 0px 0px rgb(139, 133, 133);
+  position: fixed;
+  z-index: 1;
+}
+
+.card {
+  display: inline-block;
+  width: 75px;
+  height: auto;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  transition: transform 0.5s;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 7px 0px 0px rgb(139, 133, 133);
+  transform: translateY(6px);
+}
+.card:hover{
+  animation-duration: 1s;
+  animation-name: cardBorder;
+  color: white;
+  background-color: rgb(139, 133, 133);
+  box-shadow: none;
+}
+@keyframes cardBorder{
+  0%{
+    border-radius: 15px;
+    background-color: #f0f0f0;
+  }
+  20%{
+    border-top-right-radius: 60px;
+  }
+  50%{
+    border-top-left-radius: 80px;
+  }
+  75%{
+    border-bottom-left-radius: 30px;
+  }
+  80%{
+    border-radius: 0px;
+    background-color: rgb(139, 133, 133);
+  }
+  90%{
+    border-bottom-right-radius: 20px;
+  }
+  100%{
+    border-radius: 15px;
+    background-color: rgb(139, 133, 133);
+  }
+}
+
+.card.show {
+  display: inline-block;
+  transform: translateX(0);
+}
+
+#munculkanButton{
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  margin-right: 20px;
+  background-image: url(../image/garisTiga.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 7px 0px 0px rgb(139, 133, 133);
+  transform: translateY(-6px);
+}
+
+
+@keyframes rotate{
+  0%{
+    rotate: 0deg;
+}
+  50%{
+    border-radius: 0px;
+}
+  100%{
+    rotate: 360deg;
+}
+}
+.navbar div{
+padding-bottom: 20px;
+}
+
+
+/*==================================== Content =================================== */
+
+
+.title{
+  color: white;
+  font-size: 200px;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  margin: 0px;
+  position: relative;
+  z-index: 0;
+}
+#content{
+  background-color: #333;
+  width: auto;
+  height: auto;
+  padding: 30px;
+  color: white;
+  border: 5px solid rgb(139, 133, 133);
+}
+#content img{
+  border: 5px solid rgb(139, 133, 133);
+  width: 20%;
+}
+.footer{
+  background-color: white;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+.footer div{
+  display: inline-block;
+  width: 120px;
+  height: auto;
+  margin: 20px;
+}
+.footer div a{
+  text-decoration: none;
+  color: green;
+}
+.footer div a:hover{
+  color: greenyellow;
+}
+
+.footer img{
+  width: 20px;
+}
+
+
+/* =============================================================================== */
+/* =============================================================================== */
+/* =============================================================================== */
+/* =============================================================================== */
+/* =============================== tablet ke bawah =============================== */
+/* =============================================================================== */
+/* =============================================================================== */
+/* =============================================================================== */
+/* =============================================================================== */
+@media screen and (min-width: 10px) and (max-width: 400px){
+  body{
+    background-image: url(../image/WALPAPER\ LAYAR\ OPPO\ A3S\ AZIZ.jpg);
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 900px){
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  background-image: url(../image/WALPAPER\ LAYAR\ OPPO\ A3S\ AZIZ.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#munculkanButton{
+  display: block;
+}
+#munculkanButton:hover{
+  animation-duration: 1.5s;
+  animation-name: rotate;
+  box-shadow: none;
+}
+#menu{
+  display: none;
+}
+.card {
+  width: 40px;
+  height: auto;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  transition: transform 0.5s;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 7px 0px 0px rgb(139, 133, 133);
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.title{
+  font-size: 100px;
+}
+
+.navbar{
+  overflow: initial;
+}
+
+.navbar div{
+  width: 5px;
+  transform: translateY(130px);
+}
+
+.navbar div .card{
+  margin-top: 10px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+#content img{
+  border: 5px solid rgb(139, 133, 133);
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+}
