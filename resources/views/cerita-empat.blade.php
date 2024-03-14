@@ -40,16 +40,7 @@
             <p>Pria itu menanyai wanita itu lagi. Dia kaget ketika wanita itu mengatakan itu adalah sweater putrinya yang meninggal dalam kecelakaan mobil beberapa tahun yang lalu.</p>
             
         </div>
-        <footer class="footer">
-            <h3>Follow Saya di</h3>
-            <div>
-                <a href="#">amiruddinaziz123<br><img src="{{ asset('image/logoGithub.png') }}" alt="logoGithub"></a>
-            </div>
-            <div>
-                <a href="#">aamiruddin_aziz<br><img src="{{ asset('image/logoig.png') }}" alt="logoig"></a>
-            </div>
-            
-        </footer>
+        <x-footer/>
         <script src="{{ asset('js/scriptEmpat.js') }}"></script> 
     </body>
 </html>

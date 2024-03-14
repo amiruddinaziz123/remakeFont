@@ -38,16 +38,7 @@
         <h2>Pesan Moral Yang Dapat Diambil : </h2>
         <p><i>Jadi pembelajaran yang dapat kita teladani dari Dongeng Anak Bergambar : Rubah dan Burung Bangau ini adalah Janganlah mempermainkan orang lain karena kita juga tidak suka jika dipermainkan orang lain.</i></p>
     </div>
-    <footer class="footer">
-        <h3>Follow Saya di</h3>
-        <div>
-            <a href="#">amiruddinaziz123<br><img src="{{ asset('image/logoGithub.png')}}" alt="logoGithub"></a>
-        </div>
-        <div>
-            <a href="#">aamiruddin_aziz<br><img src="{{ asset('image/logoig.png')}}" alt="logoig"></a>
-        </div>
-        
-    </footer>
+    <x-footer/>
         <script src="{{ asset('js/scriptSatu.js') }}"></script> 
     </body>
 </html>

@@ -54,16 +54,7 @@
         <p>Ia menunggu sampai Pak Tani pergi, namun kelihatannya Pak Tani betah berjaga di sana. Tapi, mengapa Pak Tani diam dan melotot terus seperti itu, ya? Kancil memberanikan diri untuk memasuki ladang dan Pak Tani tidak mengusirnya. Akhirnya Kancil mengerti, bahwa itu hanya orang-orangan yang dibuat seperti Pak Tani.</p>
 
     </div>
-    <footer class="footer">
-        <h3>Follow Saya di</h3>
-        <div>
-            <a href="#">amiruddinaziz123<br><img src="logoGithub.png" alt="logoGithub"></a>
-        </div>
-        <div>
-            <a href="#">aamiruddin_aziz<br><img src="logoig.png" alt="logoig"></a>
-        </div>
-        
-    </footer>
+    <x-footer/>
         <script src="{{ asset('js/scriptDua.js') }}"></script> 
     </body>
 </html>
